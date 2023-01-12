@@ -1,18 +1,1 @@
-{
-  "products": [
-    {
-      "title": "Playstation 9",
-      "description": "The last console from playstation, with the capacity of running all games in 120fps or inclusive 4K 60fps",
-      "price": 500,
-      "thumbnails": [
-        "https://static.wikia.nocookie.net/playstation5617/images/3/30/PlayStation_5.png/revision/latest?cb=20210107190013&path-prefix=es",
-        "https://image.pngaaa.com/542/3365542-middle.png",
-        "https://s03.s3c.es/imag/_v0/770x420/1/4/b/49996237486_efd7627a82_k.jpg",
-        "https://gmedia.playstation.com/is/image/SIEPDC/Controller-XL@2x?fmt=png-alpha&scl=1"
-      ],
-      "code": 5511,
-      "stock": 20,
-      "id": 1
-    }
-  ]
-}
+{"products": []}

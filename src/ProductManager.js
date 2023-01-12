@@ -145,8 +145,4 @@ export default class ProductManager {
       }
     }
   }
-
-  async createJSON() {
-    await fs.promises.writeFile(this.path, JSON.stringify({products: []}));
-  }
 }

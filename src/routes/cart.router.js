@@ -1,20 +1,18 @@
 import {Router} from "express";
 import fs from "fs";
+import CartsManager from "../CartsManager.js";
 
 const router = Router();
 
+const cm = new CartsManager();
+
 router.post("/api/carts", async (req, res) => {
-  const document = await fs.promises.readFile("./carts.json");
-  const carts = JSON.parse(document);
-  const id = Date.now();
-  const products = [];
-  const newCart = {
-    id,
-    products,
-  };
-  carts.carts.push(newCart);
-  await fs.promises.writeFile("./carts.json", JSON.stringify(carts));
-  res.send({status: "ok", message: `Cart created successfully with id ${id}`});
+  const response = await cm.addCart();
+  if (response.error) {
+    res.status(response.status).send(response);
+  } else {
+    res.send(response);
+  }
 });
 
 router.get("/api/carts/:cid", async (req, res) => {

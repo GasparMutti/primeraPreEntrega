@@ -1,6 +1,3 @@
-[
-  {
-    "id": 1673464880619,
-    "products": [{"productId": 1673461559227, "quantity": 1}]
-  }
-]
+{
+  "carts": [{"id": 1, "products": []}]
+}
