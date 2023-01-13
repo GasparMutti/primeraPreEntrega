@@ -1,1 +1,22 @@
-{"products": []}
+{
+  "products": [
+    {
+      "title": "ASOMBROSO",
+      "description": "prueba",
+      "price": "prueba",
+      "thumbnails": "prueba",
+      "code": "prueba",
+      "stock": "prueba",
+      "id": 1
+    },
+    {
+      "title": "2",
+      "description": "2",
+      "price": "2",
+      "thumbnails": "2",
+      "code": "33333333333",
+      "stock": "2",
+      "id": 3
+    }
+  ]
+}
