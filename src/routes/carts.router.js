@@ -1,5 +1,4 @@
 import {Router} from "express";
-import fs from "fs";
 import CartsManager from "../CartsManager.js";
 
 const router = Router();

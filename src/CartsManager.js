@@ -25,8 +25,10 @@ export default class CartsManager {
     if (response.error) {
       return response;
     } else {
-      this.id++;
-      const newCart = {id: this.id, products: []};
+      let id = response.carts.length + 1;
+      const idFinded = response.carts.find((cart) => cart.id === id);
+      while (id === idFinded?.id) id++;
+      const newCart = {id, products: []};
       response.carts.push(newCart);
       try {
         await fs.promises.writeFile(this.path, JSON.stringify(response));
@@ -40,8 +42,4 @@ export default class CartsManager {
       }
     }
   }
-
-  async getCartById(id) {}
-
-  async addToCart(cid, pid) {}
 }

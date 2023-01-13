@@ -1,6 +1,6 @@
 import express from "express";
 import productsRoutes from "./routes/products.router.js";
-import cartRoutes from "./routes/cart.router.js";
+import cartsRoutes from "./routes/carts.router.js";
 
 const server = express();
 
@@ -10,4 +10,4 @@ server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 
 server.use(productsRoutes);
-server.use(cartRoutes);
+server.use(cartsRoutes);
